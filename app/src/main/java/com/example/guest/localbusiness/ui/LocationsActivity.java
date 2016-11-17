@@ -1,4 +1,4 @@
-package com.example.guest.localbusiness;
+package com.example.guest.localbusiness.ui;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -6,6 +6,9 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.GridView;
 import android.widget.Toast;
+
+import com.example.guest.localbusiness.R;
+import com.example.guest.localbusiness.adapters.ImageAdapter;
 
 public class LocationsActivity extends AppCompatActivity {
 

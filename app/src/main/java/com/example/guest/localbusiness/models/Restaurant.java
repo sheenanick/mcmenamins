@@ -1,4 +1,4 @@
-package com.example.guest.localbusiness;
+package com.example.guest.localbusiness.models;
 
 import java.util.ArrayList;
 

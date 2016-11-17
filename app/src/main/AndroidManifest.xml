@@ -11,7 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.MainActivity"
             android:theme="@style/NoBarTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,24 +19,24 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".AboutActivity">
+        <activity android:name=".ui.AboutActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.guest.localbusiness.MainActivity">
+                android:value="com.example.guest.localbusiness.ui.MainActivity">
 
             </meta-data>
         </activity>
-        <activity android:name=".LocationsActivity">
+        <activity android:name=".ui.LocationsActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.guest.localbusiness.MainActivity">
+                android:value="com.example.guest.localbusiness.ui.MainActivity">
 
             </meta-data>
         </activity>
-        <activity android:name=".ReviewsActivity">
+        <activity android:name=".ui.ReviewsActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.guest.localbusiness.MainActivity">
+                android:value="com.example.guest.localbusiness.ui.MainActivity">
             </meta-data>
         </activity>
     </application>
