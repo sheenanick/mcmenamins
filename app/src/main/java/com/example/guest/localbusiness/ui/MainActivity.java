@@ -12,6 +12,7 @@ import butterknife.ButterKnife;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     @Bind(R.id.aboutButton) Button mAboutButton;
     @Bind(R.id.locationsButton) Button mLocationsButton;
+    @Bind(R.id.reviewsButton) Button mReviewsButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +22,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         mAboutButton.setOnClickListener(this);
         mLocationsButton.setOnClickListener(this);
+        mReviewsButton.setOnClickListener(this);
     }
 
     @Override
@@ -31,6 +33,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
         else if (v == mLocationsButton) {
             Intent intent = new Intent(MainActivity.this, LocationsActivity.class);
+            startActivity(intent);
+        } else if (v == mReviewsButton) {
+            Intent intent = new Intent(MainActivity.this, ReviewsActivity.class);
             startActivity(intent);
         }
     }

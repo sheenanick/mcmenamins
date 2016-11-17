@@ -21,16 +21,25 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="About Us"
-        android:id="@+id/aboutButton"
-        android:layout_alignParentBottom="true" />
-
+        android:text="Reviews"
+        android:id="@+id/reviewsButton"
+        android:background="@color/colorPrimary"
+        android:layout_above="@+id/locationsButton" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Locations"
         android:id="@+id/locationsButton"
+        android:background="@color/colorPrimary"
         android:layout_above="@+id/aboutButton" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="About Us"
+        android:id="@+id/aboutButton"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentBottom="true" />
 
 </RelativeLayout>
