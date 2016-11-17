@@ -4,6 +4,13 @@ android {
     compileSdkVersion 24
     buildToolsVersion "25.0.0"
 
+    buildTypes.each {
+        it.buildConfigField 'String', 'YELP_CONSUMER_KEY', YelpConsumerKey
+        it.buildConfigField 'String', 'YELP_CONSUMER_SECRET', YelpConsumerSecret
+        it.buildConfigField 'String', 'YELP_TOKEN', YelpToken
+        it.buildConfigField 'String', 'YELP_TOKEN_SECRET', YelpTokenSecret
+    }
+
     defaultConfig {
         applicationId "com.example.guest.localbusiness"
         minSdkVersion 15
@@ -24,4 +31,6 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:24.2.1'
     compile 'com.jakewharton:butterknife:7.0.1'
+    compile 'com.squareup.okhttp3:okhttp:3.2.0'
+    compile 'se.akerfeldt:okhttp-signpost:1.1.0'
 }
