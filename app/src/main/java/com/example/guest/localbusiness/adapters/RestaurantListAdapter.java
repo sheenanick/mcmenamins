@@ -51,8 +51,6 @@ public class RestaurantListAdapter extends RecyclerView.Adapter<RestaurantListAd
         @Bind(R.id.restaurantNameTextView) TextView mNameTextView;
         @Bind(R.id.ratingTextView) TextView mRatingTextView;
 
-//        private Context mContext;
-
         public RestaurantViewHolder(View itemView) {
             super(itemView);
             ButterKnife.bind(this, itemView);
