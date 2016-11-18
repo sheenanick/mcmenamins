@@ -14,23 +14,14 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/imageView"
-        android:src="@drawable/signs"
-        android:scaleType="centerCrop"
-        android:tint="#88ffffff"/>
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Reviews"
-        android:id="@+id/reviewsButton"
-        android:background="@color/colorPrimary"
-        android:layout_above="@+id/locationsButton" />
+        android:src="@drawable/burger"
+        android:scaleType="centerCrop" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Locations"
-        android:id="@+id/locationsButton"
+        android:id="@+id/reviewsButton"
         android:background="@color/colorPrimary"
         android:layout_above="@+id/aboutButton" />
 
